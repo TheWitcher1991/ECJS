@@ -1,0 +1,97 @@
+#wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    padding: 0 32px;
+}
+
+.header {
+    background: var(--addBg);
+    color: var(--fg);
+    border-bottom: 1px solid var(--border);
+    width: 100%;
+    padding: 12px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bth-exit {
+    display: flex;
+    align-items: center;
+}
+
+.bth-exit > div {
+    font-size: 20px;
+    margin-left: 16px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    -webkit-user-select: none;
+}
+
+.bth-exit > div:hover {
+    color: var(--sBg);
+}
+
+.title {
+    display: block;
+    margin: 0;
+    font-weight: 400;
+    font-size: 22px;
+    -webkit-user-select: none;
+}
+
+.input {
+    padding: 32px 0 0 0;
+    position: relative;
+}
+
+.input label {
+    display: flex;
+    align-items: center;
+    margin: 0 0 12px 0;
+    background: var(--addBg);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    transition: all 0.2s linear;
+}
+
+.input label:hover {
+    border-color: hsl(0, 0%, 72%);
+}
+
+.input label > span {
+    padding: 8px 16px;
+    display: block;
+}
+
+.input label > span > i {
+    font-size: 16px;
+    color: var(--addFg2);
+}
+
+.input label > input {
+    width: 100%;
+    color: var(--addFg);
+    padding: 8px 16px;
+    outline: none;
+    font-size: 14px;
+    border: none;
+    background: var(--addBg);
+}
+
+#create {
+    border: none;
+    border-radius: 3px;
+    color: var(--addBg);
+    cursor: pointer;
+    background: var(--sBg);
+    padding: 10px 32px;
+    transition: all 0.2s linear;
+}
+
+#create:hover {
+    background: hsl(221, 65%, 47%);
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>ExcelCreate</title>
+    <link rel="stylesheet" href="./libs/FontAwesome/css/all.min.css">
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+
+    <main id="wrapper" class="wrapper">
+        <section class="header">
+            <h1 class="title">ECJS</h1>
+            <div class="bth-exit">
+                <div id="minimize-button" class="minimize-button"><i class="far fa-window-minimize"></i></div>
+                <div id="close-button" class="close-button"><i class="fas fa-times"></i></div>
+            </div>
+        </section> 
+        <section class="content">
+            <div class="input">
+                <form>
+                    <label for="company" class="ctx">
+                        <input placeholder="Company name..." id="company" name="company" type="text">
+                        <span><i class="far fa-building"></i></span>
+                    </label>
+                    <label for="phone" class="ctx">
+                        <input placeholder="Phone..." id="phone" name="phone" type="text">
+                        <span><i class="fas fa-phone"></i></span>
+                    </label>
+                    <label for="link" class="ctx">
+                        <input placeholder="Link..." id="link" name="link" type="text">
+                        <span><i class="fas fa-link"></i></span>
+                    </label>
+                    <label for="type" class="ctx">
+                        <input type="text" placeholder="Select table type" id="type" name="type" list="command">
+                        <datalist id="command">
+                            <option value="grades for students" id="grades"></option>
+                            <option value="expenses" id="expenses"></option>
+                            <option value="report" id="report"></option>
+                        </datalist>
+                    </label>
+                    <button name="create" id="create" type="button">Create</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <script src="../electron/renderer.js"></script>
+    <script src="./scripts/index.js"></script>
+</body>
+</html>
