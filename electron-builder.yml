@@ -1,0 +1,5 @@
+appId: your.app.Id
+publish:
+    - provider: github
+      owner: TheWitcher1991
+      repo: ecjs
